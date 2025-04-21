@@ -1,0 +1,13 @@
+jobs:
+  pypi-publish:
+    runs-on: ubuntu-latest
+
+    name: Publish to PyPI
+    environment:
+      name: PyPI
+      url: http://pypi.org/p/vyntrpy
+    permissions:
+      id-token: write
+    steps:
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
