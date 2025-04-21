@@ -1,3 +1,7 @@
+on:
+  workflow_dispatch:
+
+
 jobs:
   pypi-publish:
     runs-on: ubuntu-latest
